@@ -13,7 +13,6 @@ class SearchBar extends Component {
 
     onFormSubmit = (event) => {
         event.preventDefault();
-        //68d70243486baf9346d8b9250e875114  api key
         this.props.fetchWeather(this.state.term)
         this.setState({
             term: ''
